@@ -1,6 +1,6 @@
 CREATE TABLE [dbo].[Order_Product] (
     [Order_ProductID] INT             IDENTITY (1, 1) NOT NULL,
-    [Quantity]        DECIMAL (18, 2) NOT NULL,
+    [Quantity]        INT             NOT NULL,
     [OrderID]         INT             NOT NULL,
     [ProductID]       INT             NOT NULL,
     CONSTRAINT [PK_Order_Product] PRIMARY KEY CLUSTERED ([Order_ProductID] ASC),
